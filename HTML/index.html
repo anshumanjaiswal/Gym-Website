@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Website</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+  /* CSS Reset */
+  body {
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    background: url('/image/dumbells.jpg');
+  }
+
+  .left {
+    display: inline-block;
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+
+  .left img {
+    width: 64px;
+  }
+
+  .left div {
+    line-height: 15px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .mid {
+    display: block;
+    width: 44%;
+    margin: 22px auto;
+    /* border: 2px solid yellow; */
+  }
+
+  .right {
+    position: absolute;
+    right: 34px;
+    top: 35px;
+    display: inline-block;
+    /* border: 2px solid green; */
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 15px;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    color: grey;
+    text-decoration: underline;
+  }
+
+  .btn {
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 0px 12px;
+    background-color: white;
+    color: black;
+    margin: 0px 3px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer
+  }
+
+  .btn:hover {
+    background-color: grey;
+  }
+
+  .container {
+    border: 2px solid black;
+    width: 33%;
+    padding: 50px 80px;
+    margin: 80px 100px;
+    border-radius: 22px;
+  }
+
+  .form-group input {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 9px auto;
+    padding: 2px;
+    width: 92%;
+    border-radius: 2px;
+    /* border: 2px solid red; */
+    font-family: 'Baloo Bhaina 2', cursive;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  .container button {
+    margin: auto;
+    width: 94%;
+    display: block;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <!--left for logo-->
+    <div class="left">
+      <img src="/image/icon.png" alt="">
+      <div>Gym Rat</div>
+    </div>
+    <!--mid for navbar-->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href='#' class="active">Home</a></li>
+        <li><a href='#'>About us</a></li>
+        <li><a href='#'>BMI Calculator</a></li>
+        <li><a href='#'>Contact us</a></li>
+      </ul>
+    </div>
+    <!--right for buttons-->
+    <div class="right">
+      <button class="btn">Call Us</button>
+      <button class="btn">Email us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the best Gym of India Now!</h1>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Age">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Gender">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Locality">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Email">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Phone Number">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
